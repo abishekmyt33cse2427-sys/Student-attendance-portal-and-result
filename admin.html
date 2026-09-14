@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Admin Portal</h1>
+    <p>Student Management</p>
+</header>
+
+<div class="container">
+
+    <div class="card">
+
+        <h2>Add Student</h2>
+
+        <form id="studentForm">
+
+            <label>Student Name</label>
+            <input type="text" id="name" required>
+
+            <label>Register Number</label>
+            <input type="text" id="register" required>
+
+            <label>Department</label>
+            <input type="text" id="department" required>
+
+            <label>Attendance Percentage</label>
+            <input type="number" id="attendance" min="0" max="100" required>
+
+            <label>Subject 1 Mark</label>
+            <input type="number" id="mark1" min="0" max="100" required>
+
+            <label>Subject 2 Mark</label>
+            <input type="number" id="mark2" min="0" max="100" required>
+
+            <label>Subject 3 Mark</label>
+            <input type="number" id="mark3" min="0" max="100" required>
+
+            <button type="submit">Add Student</button>
+
+        </form>
+
+    </div>
+
+    <div class="card">
+
+        <h2>Student Records</h2>
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Register No</th>
+                    <th>Department</th>
+                    <th>Attendance</th>
+                    <th>Total Marks</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+            <tbody id="studentTable"></tbody>
+
+        </table>
+
+    </div>
+
+    <a href="index.html" class="btn">Back to Home</a>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
