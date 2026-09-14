@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Student Portal</h1>
+    <p>View Attendance & Result</p>
+</header>
+
+<div class="container">
+
+    <div class="card">
+
+        <h2>Student Login</h2>
+
+        <label>Register Number</label>
+
+        <input
+            type="text"
+            id="searchRegister"
+            placeholder="Enter Register Number"
+        >
+
+        <button onclick="searchStudent()">
+            View Details
+        </button>
+
+    </div>
+
+    <div id="studentResult"></div>
+
+    <a href="index.html" class="btn">
+        Back to Home
+    </a>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
